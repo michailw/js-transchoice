@@ -55,11 +55,15 @@ define('translator',
             }
             if(this.catalogues[catalogue][language][message]){
                 message = this.catalogues[catalogue][language][message];
-                if(variables){
-                    for(var i in variables){
-                        if(variables.hasOwnProperty(i) && i!='length'){
-                            message = message.replace('%'+i+'%', variables[i]);
-                        }
+            } else if(this.catalogues[catalogue][this.defaultLanguage][message]){
+                message = this.catalogues[catalogue][this.defaultLanguage][message];
+            } else if(this.catalogues[catalogue][this.fallbackLanguage][message]){
+                message = this.catalogues[catalogue][this.fallbackLanguage][message];
+            }
+            if(variables){
+                for(var i in variables){
+                    if(variables.hasOwnProperty(i) && i!='length'){
+                        message = message.replace('%'+i+'%', variables[i]);
                     }
                 }
             }
