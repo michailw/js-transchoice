@@ -1,0 +1,24 @@
+{
+  "name": "MWojtowicz_Transchoice",
+  "version": "0.0.1",
+  "authors": [
+    "Michał Wójtowicz"
+  ],
+  "description": "Same as in Twig.js",
+  "main": "transchoice.js",
+  "keywords": [
+    "translate",
+    "transchoice",
+    "twig.js",
+    "i18n"
+  ],
+  "license": "MIT",
+  "homepage": "http://mwojtowicz.it",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
