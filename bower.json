@@ -5,7 +5,7 @@
     "Michał Wójtowicz"
   ],
   "description": "Same as in Twig.js",
-  "main": "transchoice.js",
+  "main": "translator.js",
   "keywords": [
     "translate",
     "transchoice",
